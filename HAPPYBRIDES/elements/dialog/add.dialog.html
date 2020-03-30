@@ -1,0 +1,22 @@
+<div class='dialog-container'>
+  <div class='dialog-content'>
+    <div class="dialog-header">
+      <h5>Add item</h5>
+      <button onclick="closeDialog();" class="dialog-close" aria-label="Close">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <div>
+        <label>Description</label><input id="addDescription" type="text" name="description"
+          placeholder="Description...">
+      </div>
+      <div>
+        <label>Price</label><input id="addPrice" type="text" name="price" placeholder="Price...">
+      </div>
+    </div>
+    <div class="dialog-footer">
+      <button onclick="addItem();" class="main">Add &nbsp;<i class="fa fa-save"></i></button>
+    </div>
+  </div>
+</div>

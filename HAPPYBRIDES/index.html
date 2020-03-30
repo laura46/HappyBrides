@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - Happy Brides</title>
+
+    <link rel="icon" href="./assets/Wedding3x_42241.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="navigation" >
+        <span onclick="navigate('./home/home.html')" class="header" data-toggle="tooltip" title="Go back to the homepage" data-placement="bottom">
+            Happy Brides
+            <i onclick="navigate('./home/home.html')" class="fa fa-heart-o"></i>
+        </span>
+        <div>
+            <i id="infoIcon" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"></i>
+            <i id="navbarLogin" onclick="openDialog('./elements/dialog/login.dialog.html');" data-toggle="tooltip" title="Log in" class="fa fa-user-circle-o" aria-hidden="true" data-placement="bottom"></i>
+            <i id="navbarLogout" onclick="logout();" class="fa fa-power-off" data-toggle="tooltip" title="Log out" aria-hidden="true" data-placement="bottom"></i>
+        </div>
+    </div>  
+    <div id="pageContent" class="page-container" ></div>
+    <script src="./scripts/global.js"></script>
+    <script src="./scripts/UI.js"></script>
+    <script src="./scripts/dialog.js"></script>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/list.js"></script>
+    <script src="./scripts/listItem.js"></script>
+    <script src="./scripts/helpers.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class='dialog-container'>
+  <div class='dialog-content'>
+    <div class="dialog-header">
+      <h5>Log in</h5>
+      <button onclick="closeDialog();" class="dialog-close" aria-label="Close">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <input onfocusout="checkForm(this.id);" id="loginEmail" type="text" name="email" placeholder="Username...">
+      <input onfocusout="checkForm(this.id);" id="loginPassword" type="password" name="password" placeholder="Password...">
+      <label class="warn hidden">
+        <i class="fa fa-exclamation-circle"></i>
+        Details unknown, check your credentials.
+      </label>
+    </div>
+    <div class="dialog-footer">
+      <button id="btnLogin" onclick="verifyLogin();" class="main">Log in &nbsp;<i class="fa fa-user-circle"></i></button>
+    </div>
+  </div>
+</div>

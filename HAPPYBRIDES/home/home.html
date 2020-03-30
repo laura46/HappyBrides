@@ -1,0 +1,27 @@
+<div class="home-header">
+    <span>Couple</span>
+    <span>Are you a</span>
+    <span>Guest</span>
+</div>
+<div class="home-body">
+    <div class="home-couple">
+        <label class="title">Couples</label>
+        <button onclick="openDialog('./elements/dialog/login.dialog.html');" id="btnLogin" class="main">Log in &nbsp;<i class="fa fa-user-circle"></i></button>
+        <span>or</span>
+        <button onclick="openDialog('./elements/dialog/register.dialog.html');" id="btnRegister" class="accent" >Register &nbsp;<i class="material-icons">group_add</i></button>
+    </div>
+    <div class="home-or">
+        <div></div>
+        <span>or</span>
+        <div></div>
+    </div>
+    <div class="home-guest">
+        <label class="title">Guests</label>
+        <input id="inputUniqueCode" type="text" placeholder="Enter unique code..." data-toggle="tooltip" title="Ask your couple for a unique code, they would have received when registering.">
+        <label class="warn hidden">
+            <i class="fa fa-exclamation-circle"></i>
+            Code unknown, please check your code.
+        </label>
+        <button onclick="verifyUniqueCode();" class="main">Go to wish list &nbsp;<i class="fa fa-gift"></i></button>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class='dialog-container'>
+  <div class='dialog-content'>
+    <div class="dialog-header">
+      <h5>Register</h5>
+      <button onclick="closeDialog();" class="dialog-close" aria-label="Close">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <label class='info'>
+        <i class="fa fa-info-circle"></i>
+        Please fill out your names as a couple, these names will be displayed
+        to your friends when they open your wish list.
+      </label>
+      <div class="element-row">
+        <input type="text" onfocusout="checkForm(this.id);" id="namePerson1" placeholder="Enter name...">
+        <input type="text" onfocusout="checkForm(this.id);" id="namePerson2" placeholder="Enter name...">
+      </div>
+      <div class="divider"></div>
+      <label>In the future you will use these details to log in.</label>
+      <div class="element-row">
+        <input type="text" onfocusout="checkForm(this.id);" placeholder="Username..." id="emailAddress">
+        <input type="password" onfocusout="checkForm(this.id);" placeholder="Password..." id="password">
+      </div>
+    </div>
+    <div class="dialog-footer">
+      <button id="btnRegister" class="main" onclick="register();">Register</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class='dialog-container'>
+    <div class='dialog-content'>
+        <div class="dialog-header">
+            <h5>Claim item</h5>
+            <button onclick="closeDialog();" class="dialog-close" aria-label="Close">
+                <span>&times;</span>
+            </button>
+        </div>
+        <div class="dialog-body" style="width:400px;">
+            <span id="itemDescription"></span>
+            <span id="itemPosition" class="hidden"></span>
+            <input id="claimerName" type="text" placeholder="Your name..">
+            <label class="info">Write a nice message here, also announcing any fellow contributors, the message will be shown to the couple after the wedding ceremony.</label>
+            <textarea id="claimerText" type="text" name="contributors" placeholder="Contributors..."></textarea>
+        </div>
+        <div class="dialog-footer">
+            <button onclick="claimListItem();" class="main">Confirm &nbsp;<i class="fa fa-gift"></i></button>
+        </div>
+    </div>
+</div>

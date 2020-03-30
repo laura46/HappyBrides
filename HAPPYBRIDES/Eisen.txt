@@ -1,0 +1,36 @@
+https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
+-------------------------------------------------------------
+Met alleen bootstrap maak je de frontend van een wenslijst applicatie:
+
+Een bruidspaar moet de volgende dingen kunnen doen:
+- een account aan kunnen maken
+- in kunnen loggen met account
+- een wenslijst aanmaken
+- items kunnen aanpassen
+- items kunnen verwijderen
+- items kunnen toevoegen
+- items van volgorde verplaatsen
+
+-------------------------------------------------------------
+Applicatie eisen:
+
+- Bij registratie moet een gebruiker een unieke code krijgen.
+- Deze code kan het paar aan de gasten geven om de wenslijst te bereiken
+- Implementeer alles met bootstrap
+- Pas het grid-system toe met de link hierboven
+- Maak alles responsive
+-------------------------------------------------------------
+Een gast van een gebruiker moet met de code de volgende dingen kunnen doen:
+
+- De wensenlijst opvragen
+- Aangeven welke cadeaus hij/zij wil kopen
+- Aangeven of er mensen bijdragen en wie dat zijn
+- Gekozen cadeaus mogen niet meer zichtbaar zijn voor andere gebruikers, alleen voor het koppel 
+------------------------------------
+pva
+pagina's:
+- Koppel lijst pagina
+    - met edit dialog
+    - delete dialog
+    - add dialog
+

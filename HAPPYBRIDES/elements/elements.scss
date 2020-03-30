@@ -1,0 +1,124 @@
+@import '../styles/theme.scss';
+
+
+
+.modal {
+    &-dialog {
+        height: -webkit-fill-available;
+        padding: 8%;
+    }
+    &-header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border-bottom-color: $main;
+        padding: 0;
+    }
+    &-title {
+        color: $main;
+        font-size: 24px;
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+    &-content {
+        display: inline-flex;
+        width: fit-content;
+    }
+    &-footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        border-top: 1px solid $main;
+    }
+    &-register {
+        width: min-content;
+        & div:last-child {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            & div {
+                display: flex;
+                flex-flow: row;
+                & input {
+                    padding-left: 36px;
+                    background-image: url('./assets/user-solid.svg');
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position-y: center;
+                    background-position-x: 8px;
+                }
+            }
+        }
+        & input {
+            margin: 10px 10px;
+        }
+    }
+    &-login {
+        & input {
+            margin: inherit;
+            margin-top: 20px;
+        } 
+        & div:last-child {
+            display: flex;
+            flex-flow: column wrap;
+            padding: 10px 30px;
+            align-items: center;
+        }
+        & button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &-edit {
+        & .modal-body {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            & input {
+                margin: 10px 10px;
+            }
+            & label {
+                padding: 10px;
+                margin: 10px;
+                color: $accent;
+                font-size: 16px;
+            }
+            & div {
+                display: flex;
+                flex-flow: row;
+                align-items: baseline;
+            }
+        }
+    }
+    &-select {
+        & .modal-body  {
+            & label {
+                color: $accent;
+                padding: 10px 20px;
+            }
+            & span {
+                color: $accent-dark;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    &-code {
+        & .modal-body {
+            & span {
+
+            }
+            & label {
+                color: $accent;
+            }
+        }
+    }
+    &-add {
+        & .modal-body {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+}

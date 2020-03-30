@@ -1,0 +1,19 @@
+<div class="list-page">
+    <div class="list-header">
+        <i class="fa fa-heart"></i>
+        <span id="name1"></span><span> and </span><span id="name2"></span>
+        <i class="fa fa-heart"></i>
+    </div>
+    <button id="btnAdd" class="main" onclick="openDialog('./elements/dialog/add.dialog.html')">Item toevoegen</button>
+    <div class="list-container">
+        <span class="header">
+            <div><i class="fa fa-star"></i> Wish list <i class="fa fa-star"></i></div>
+            <button id='btnListAdd' class="main" onclick="openModal('./elements/modals/add.modal.html')">ADD ITEM</button>
+        </span>
+        <div class="list-headers">
+            <span class="a">No.</span><span class="b">Description</span><span class="c">Price</span><span class="d">Order</span>
+        </div>
+        <ol id="wishList" >
+        </ol>
+    </div>
+</div>

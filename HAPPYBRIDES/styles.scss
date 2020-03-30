@@ -1,0 +1,58 @@
+@import './styles/theme.scss';
+@import './styles/responsive.scss';
+@import './home/home.scss';
+@import './list/list.scss';
+@import './elements/elements.scss';
+@import './styles/helpers.scss';
+@import './elements/dialog/dialog.scss';
+
+
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    &.open-dialog {
+        overflow: hidden;
+    }
+}
+
+body {
+    width: fit-content;
+    height: 100%;
+    display: block;
+}
+
+span {
+    cursor: default;
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+}
+
+.page-container {
+    padding: 40px;
+    width: 100vw;
+}
+
+.navigation {
+    width: auto;
+    height: 30%;
+    background-color: $main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    span, i {
+        font-size: 40px; 
+        color:white;
+        padding: 20px 40px;
+        cursor: pointer;
+        &[id*='navbar']:hover {
+            color: $accent;
+        }
+    }
+}
